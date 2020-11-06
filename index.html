@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<h1>Popsicles at Dawn</h1>
+	<p>This is my website. I am learning how to build a website.  It's 2018 and I have never built a website.</p>
+	<p>As I learn more about this.  I will add features to the website.  It's going to get wild for a bit...</p>
+</body>
+
+<body>
+	<button onclick="revealMessage()">Try clicking this button!</button>
+	<div id="hiddenMessage" style="display:none">
+		<p>You are really getting the hang of this!</p>
+		<button id="countDownButton" onclick="countDown()">10</button>
+			<div id="countDownZeroMsg" style="display: none">
+				<p>The countdown has reached zero! Something must have happened...somewhere</p>
+				<p>How exciting!</p>
+			</div>
+	</div>
+</body>
+
+<body>
+	<h1 style="text-align: center; color: white;" id="hidden">I was hidden! (I think I'm learning jquery with this bit....remains to be seen</h1>
+	<button id="alertButton">Alert me!</button>
+</body>
+
+<p> </p>
+<p> </p>
+<p> </p>
+
+
+<body ng-app="ToDoList">
+	<div ng-controller="MainController">
+		<!-- <li> {{ list[1] }} </li>
+		<li> {{ list[2] }} </li>
+		<li> {{ list[0] }} </li> -->
+		<div ng-repeat="item in list">
+			<li> {{ item }} </li>
+		</div>
+		<input ng-model="addToDo">
+		<button ng-click="addItem()">Add This To-Do</button>
+	</div>
+	<!-- Modules -->
+	<script src="js/app.js"></script>
+	<!-- Controllers -->
+	<script src="js/controllers/MainController.js"></script>
+</body>
+</html>
